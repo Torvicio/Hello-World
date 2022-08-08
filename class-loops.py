@@ -74,7 +74,7 @@ students = ["Herminone","Harry","Ron"]
 # for i in range (len (students)):
     # print (i, students [i])
     # print (i+1, students [i])
-# Dictionanry -  {}
+# Dictionanry - key and value  {}
 students = {
     "Hermione":"Gryffindor",
     "Harry":"Gryffindor",
@@ -86,21 +86,65 @@ students = {
 # print(students ["Ron"])
 # print(students ["Draco"])
 
-for student in students:
-    # print(students [student])
-    print (student,":", students[student])
-    # or 
-    print (student, students [student],sep=":")
-    
+# for student in students:
+#     # print(students [student])
+#     print (student,":", students[student])
+#     # or 
+#     print (student, students [student],sep=":")
 
-# above prints out the value associated with the item in []
+# new stuff lists and dictionary
+# students = [
+#     {"name": "Hermione","house": "Gryffindor","patronus": "Otter"},
+#     {"name": "Harry","house": "Gryffindor","patronus": "Stag"},
+#     {"name": "Ron","house": "Gryffindor","patronus": "Jace Russel terrier"},
+#     {"name": "Hermione","house": "Gryffindor","patronus": None}
+# ]
+# print (students[0])
+# print (students[1])
+#for student in students:
+    #print (student["name"], student["house"], student ["patronus"], sep = " | ")
+# see the output .. it only prints out the values and not the keys .. how do I print the keys and the values? 
+# the class did not address this
+# 
+# print ("#")
+# print ("#")  
+# print ("#")  
+# this will print the hash character three times on top of eachother
+# this code below does the same thing 
+# for _ in range (3):
+#     print("#")
+#  Now this change this
+# def main():
+#     print_column (3)
 
+# def print_column(height):
+#     for _ in range(height):
+#         print("#")
 
+# main()
+# this prints a square of 4 X 4 .. this is my technique .. 
+# def main():
+#     print_row (4)
 
+# def print_row (width):
+#     for _ in range (width):
+#         print ("?" * width)
 
+# main ()
 
+# this is what the instructor taught to do the same thing. 
+# It seems much too complicated- I did mine with much less code.
 
+def main ():
+    print_square (3)
 
+def print_square (size):
+   for i in range (size):
+        for j in range (size):
+            print ("?", end = "")
+        print ()
+
+main ()
 
 
 
